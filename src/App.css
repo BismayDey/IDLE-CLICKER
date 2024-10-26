@@ -18,8 +18,10 @@ body {
   padding: 20px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1s; /* Animation on load */
+  max-width: 90%; /* Responsive max-width */
 }
 
+/* Title */
 .title {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -154,5 +156,70 @@ body {
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff9800, 0 0 40px #ff9800,
       0 0 50px #ff9800;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .resources {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .click-button {
+    font-size: 1.2rem; /* Smaller button font size */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+
+  .upgrade-button {
+    font-size: 0.9rem; /* Smaller button font size */
+    padding: 8px 15px; /* Adjust button padding */
+  }
+
+  .achievement-item,
+  .leaderboard-item {
+    font-size: 0.9rem; /* Smaller font size for list items */
+    padding: 5px 8px; /* Adjust padding */
+  }
+
+  .progress {
+    height: 8px; /* Smaller progress bar height */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem; /* Further reduce font size */
+  }
+
+  .resources {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .click-button {
+    font-size: 1rem; /* Further reduce button font size */
+    padding: 8px 15px; /* Adjust button padding */
+  }
+
+  .upgrade-button {
+    font-size: 0.8rem; /* Further reduce button font size */
+    padding: 7px 12px; /* Adjust button padding */
+  }
+
+  .achievement-item,
+  .leaderboard-item {
+    font-size: 0.8rem; /* Further reduce font size for list items */
+    padding: 4px 6px; /* Adjust padding */
+  }
+
+  .progress {
+    height: 6px; /* Further reduce progress bar height */
   }
 }
